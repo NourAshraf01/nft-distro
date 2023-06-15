@@ -1,0 +1,141 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Clash Display';
+  src: url(/clash_display.ttf);
+}
+
+:root {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 10px;
+}
+
+body,
+html {
+  scroll-behavior: smooth;
+  overflow-y: auto;
+}
+
+.svg {
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+.clip-path {
+  width: 100%;
+  /* background-size: cover; */
+  clip-path: url(#my-clip-path);
+}
+
+.hexagon {
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+}
+
+
+.header-big {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.large-title {
+  font-size: 3.2rem;
+  font-weight: 700;
+}
+
+.title-1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.title-2 {
+  font-size: 2.6rem;
+  font-weight: 500;
+}
+
+.title-3 {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.title-4 {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.headline {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.body {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.caption-1 {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.caption-2 {
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.caption-3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.web3-text {
+  -webkit-text-stroke: 0.7px black;
+  color: #6B6B6B;
+  font-size: 1.4rem;
+  font-weight: 400;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.6);
+  letter-spacing: 0.31em;
+}
+
+.clash-display {
+  font-family: 'Clash Display';
+  font-weight: 500;
+  font-size: 6.88924rem;
+  letter-spacing: -0.003em;
+}
+
+.pink-gradient {
+  background: linear-gradient(108.39deg, #FF56BB 6.99%, #FF8F77 119.86%);
+}
+
+.blue-gradient {
+  background: linear-gradient(108.39deg, #6E56FF 6.99%, #B073FF 119.86%);
+}
+
+.purple_gradient {
+  background: linear-gradient(108.39deg, #6E56FF 6.99%, #B073FF 119.86%);
+}
+
+
+.ball-shadow{
+  filter: drop-shadow(4px 26px 22px rgba(0, 0, 0, 0.25));
+}
+
+.container{
+  margin: 0 auto;
+  padding: 0 4rem;
+}
+
+.hover-zoom{
+  transition: all 1s ease-in-out;
+}
+
+.hover-zoom:hover{
+  transform: scale(1.03);
+}
+
+.card-shadow{
+  box-shadow: 0px 4.57051px 54.8461px rgba(197, 197, 197, 0.25);
+}
