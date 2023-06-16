@@ -15,7 +15,7 @@ type NFTCardProps = {
 
 const NFTCard = ({ user, userAvatar, nftName, nft, currentBid }: NFTCardProps) => {
     return (<>
-        <div className="flex flex-col bg-white dark:bg-light_black_grey-dark rounded-[12px] p-[10px] card-shadow gap-[10px] hover-zoom flex-1">
+        <div className="flex flex-col bg-white dark:bg-light_black_grey-dark rounded-[12px] p-[10px] card-shadow gap-[10px] hover-zoom flex-1 relative">
 
             <div className="rounded-[5px]">
                 {
@@ -42,8 +42,8 @@ const NFTCard = ({ user, userAvatar, nftName, nft, currentBid }: NFTCardProps) =
                     </div>
                     <div className='flex flex-col'>
                         <span className='caption-2 text-grey_milk_weight-light'>Current Bid</span>
-                        <div className='flex items-center gap-[10px]'>
-                            <Etheruem />
+                        <div className='flex items-center gap-[10px] fill-black dark:fill-white'>
+                            <Etheruem  fill="inherit"/>
                             <span className='headline'>{currentBid}</span>
                         </div>
 

@@ -9,7 +9,6 @@ const SvgEtheruem = (props) => (
   >
     <g clipPath="url(#etheruem_svg__a)">
       <path
-        fill="#000"
         d="m9.544 7.935-4.636 2.753L.27 7.935 4.908.197l4.636 7.738Zm-4.636 3.637L.27 8.819l4.638 6.568L9.547 8.82l-4.639 2.753Z"
       />
     </g>
