@@ -8,6 +8,7 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import Leaderboard from "~/layouts/Leaderboard";
 import Explore from "~/layouts/Explore";
+import Footer from "~/components/Footer";
 gsap.registerPlugin(ScrollTrigger);
 
 const Home: NextPage = () => {
@@ -51,6 +52,7 @@ const Home: NextPage = () => {
         </section>
         <Leaderboard/>
         <Explore/>
+        <Footer/>
       </main>
     </>
   );

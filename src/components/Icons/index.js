@@ -1,8 +1,14 @@
 export { default as Svg3DBall } from "./3DBall";
 export { default as Svg3DBallSmall } from "./3DBallSmall";
+export { default as ArrowDown } from "./ArrowDown";
 export { default as Etheruem } from "./Etheruem";
 export { default as MainNft } from "./MainNft";
+export { default as Moon } from "./Moon";
+export { default as Sun } from "./Sun";
 export { default as User0 } from "./User0";
 export { default as User1 } from "./User1";
+export { default as User2 } from "./User2";
+export { default as User3 } from "./User3";
+export { default as User4 } from "./User4";
 export { default as Verified } from "./Verified";
 export { default as Wallet } from "./Wallet";
