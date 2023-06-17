@@ -106,12 +106,12 @@ html {
   letter-spacing: -0.003em;
 }
 
-.clash-display-small{
+.clash-display-small {
   font-size: 4.1231rem !important;
 
 }
 
-.switch-shadow{
+.switch-shadow {
   box-shadow: 0px 2.17647px 5.80392px rgba(0, 0, 0, 0.15), 0px 2.17647px 0.72549px rgba(0, 0, 0, 0.06);
 }
 
@@ -188,4 +188,28 @@ html {
     grid-template-columns: repeat(4, minmax(0, 1fr));
 
   }
+}
+
+.img-wrap {
+  /* width: 200px;
+  height: 150px; */
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  margin: 0;
+}
+
+.img-wrap > img {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-height: 100%;
+  min-width: 100%;
+  transform: translate(-50%, -50%);
+}
+
+.radial-gradient-effect {
+  background: radial-gradient(50% 50% at 50% 50%, #FF7A91 0%, rgba(255, 193, 158, 0.5) 50%, rgba(217, 217, 217, 0) 100%);
+  filter: blur(34.5px);
 }

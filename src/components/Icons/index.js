@@ -1,6 +1,8 @@
 export { default as Svg3DBall } from "./3DBall";
 export { default as Svg3DBallSmall } from "./3DBallSmall";
 export { default as ArrowDown } from "./ArrowDown";
+export { default as ArrowRight } from "./ArrowRight";
+export { default as DistroLogo } from "./DistroLogo";
 export { default as Etheruem } from "./Etheruem";
 export { default as MainNft } from "./MainNft";
 export { default as Moon } from "./Moon";

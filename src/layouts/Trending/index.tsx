@@ -21,7 +21,7 @@ const Trending = () => {
                 <span className="header-big">Featured Collections</span>
                 <div className="flex flex-1 gap-28 justify-center w-full flex-wrap">
 
-                    <NFTBidCard description="We would like to present you The Exboot 3D - Watching you~" nftName="ExBoot #1" currentBid={3.421} nft="0" user="Perperzon" userAvatar="0" />
+                    <NFTBidCard position={0} description="We would like to present you The Exboot 3D - Watching you~" nftName="ExBoot #1" currentBid={3.421} nft="0" user="Perperzon" userAvatar="0" />
                     <NFTBidCard description="We would like to present you The Exboot 3D - Watching you~" nftName="ExBoot #2" currentBid={3.421} nft="1" user="Richard " userAvatar="1" />
 
                 </div>

@@ -11,10 +11,11 @@ type NFTBidCardProps = {
     nftName: string;
     nft: string;
     currentBid: number;
-    description: string
+    description: string;
+    position?: number;
 }
 
-const NFTBidCard = ({ user, userAvatar, nftName, nft, currentBid, description }: NFTBidCardProps) => {
+const NFTBidCard = ({ user, userAvatar, nftName, nft, currentBid, description,position }: NFTBidCardProps) => {
     const [hours, setHours] = useState(0);
     const [minutes, setMinutes] = useState(0);
     const [seconds, setSeconds] = useState(0);
@@ -35,13 +36,12 @@ const NFTBidCard = ({ user, userAvatar, nftName, nft, currentBid, description }:
 
     }, [])
     return (<>
-        <div className="flex bg-white dark:bg-light_black_grey-dark rounded-[9px] p-[2.1rem] card-shadow-2 gap-[10px] hover-zoom flex-1 relative max-w-fit">
-
-            <div className="rounded-[15px] h-full">
+        <div className="flex bg-white dark:bg-light_black_grey-dark rounded-[9px] p-[2.1rem] card-shadow-2 gap-[10px] flex-1 relative max-w-fit">
+            <div className="rounded-[15px] h-full img-wrap w-[400px]">
                 {
                     nft === "0" ?
-                        <img style={{ maxWidth: 'revert', height: '100%' }} height={'100%'} src={img0.src} alt="" /> :
-                        <img style={{ maxWidth: 'revert', height: '100%' }} height={'100%'} src={img1.src} alt="" />
+                        <img  src={img0.src} alt="" /> :
+                        <img  src={img1.src} alt="" />
 
 
                 }
@@ -74,6 +74,8 @@ const NFTBidCard = ({ user, userAvatar, nftName, nft, currentBid, description }:
                 <div className='flex-1 w-full'>
                     <Button onClick={() => { }} className='headline'  text='Place Bid'/>
                 </div>
+            </div>
+            <div className={`absolute w-[70%] h-[105%] radial-gradient-effect top-0 z-[-1] ${position === 0?'right-1/2' :'left-1/2'}`}>
 
             </div>
         </div>
