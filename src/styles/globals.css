@@ -99,10 +99,23 @@ html {
   letter-spacing: 0.31em;
 }
 
+.header-alt{
+  font-size: 1.4rem;
+  font-weight: 400;
+  letter-spacing: 0.31em;
+}
+
 .clash-display {
   font-family: 'Clash Display';
   font-weight: 500;
   font-size: 6.88924rem;
+  letter-spacing: -0.003em;
+}
+
+.clash-display-2 {
+  font-family: 'Clash Display';
+  font-weight: 500;
+  font-size: 5.84524rem;
   letter-spacing: -0.003em;
 }
 

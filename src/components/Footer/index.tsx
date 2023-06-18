@@ -22,7 +22,6 @@ const Footer = () => {
     }, []);
 
     useEffect(() => {
-        console.log(theme)
         if (theme === 'light') {
             document.documentElement.setAttribute('data-theme', 'light');
             document.documentElement.style.colorScheme = 'light'

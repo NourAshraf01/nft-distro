@@ -24,9 +24,9 @@ const Nav = () => {
                 <input value={''}  placeholder="Search"  className="bg-transparent outline-none border-none w-fit title-3 placeholder:text-[#B7B7B7] text-[#B7B7B7] dark:text-grey_milk_weight-dark placeholder:dark:text-grey_milk_weight-dark"/>
             </div>
             <div className="flex gap-[25px] title-4">
-                <HeaderLink onClick={setSelectedNav} text={'Explore'} activeRef={selectedNav} href="#home"/>
-                <HeaderLink onClick={setSelectedNav} text={'Trending🔥'} activeRef={selectedNav} href="#trending"/>
-                <HeaderLink onClick={setSelectedNav} text={'FAQ'} activeRef={selectedNav} href="#"/>
+                <HeaderLink onClick={setSelectedNav} text={'Explore'} activeRef={selectedNav} href="/#home"/>
+                <HeaderLink onClick={setSelectedNav} text={'Trending🔥'} activeRef={selectedNav} href="/#trending"/>
+                <HeaderLink onClick={setSelectedNav} text={'FAQ'} activeRef={selectedNav} href="/faq"/>
 
             </div>
         </div>

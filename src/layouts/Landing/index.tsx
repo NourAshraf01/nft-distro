@@ -12,7 +12,7 @@ import svg3dballsamll from '../../assets/3d_ball_small.svg';
 const Landing = () => {
     const connection = useConnect({
         connector: new InjectedConnector(),
-      });
+    });
     const acc = useAccount()
 
     const handleLogin = async () => {
@@ -46,7 +46,9 @@ const Landing = () => {
                             Unlock Unique Digital Ownership with NFTs
                         </span>
                         <span className="text-[2.4rem] text-grey_milk_weight-light dark:text-grey_milk_weight-dark">Experience the Revolutionary World of Non-Fungible Tokens on Our Exclusive NFT Marketplace</span>
-                        <Button text="Connect Wallet" onClick={handleLogin} />
+                        <div className="h-[6.3rem]">
+                            <Button text="Connect Wallet" onClick={handleLogin} />
+                        </div>
                     </div>
                     <div className="flex flex-col" id="main-nft">
                         <div className="relative w-full">

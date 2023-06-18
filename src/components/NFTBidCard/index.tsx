@@ -71,7 +71,7 @@ const NFTBidCard = ({ user, userAvatar, nftName, nft, currentBid, description,po
                         <span className='caption-1'>{hours}h {minutes}m {seconds}s</span>
                     </div>
                 </div>
-                <div className='flex-1 w-full'>
+                <div className='flex-1 w-full h-[5rem]'>
                     <Button onClick={() => { }} className='headline'  text='Place Bid'/>
                 </div>
             </div>

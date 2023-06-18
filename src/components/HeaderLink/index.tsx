@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 type HeaderLinkProps = {
     text: string;
@@ -8,9 +9,10 @@ type HeaderLinkProps = {
 }
 
 const HeaderLink = ({ text, href, activeRef,onClick }: HeaderLinkProps) => {
-    console.log(activeRef)
+    const router = useRouter();
+
     return (<>
-        <a onClick={()=>onClick(href)} href={href} className={`${href === activeRef ? 'text-black dark:text-white title-4' : 'text-[#6B6B6B] dark:text-grey_milk_weight-dark title-3'}`}>{text}</a>
+        <Link scroll={false} onClick={()=>onClick(href)} href={href} className={`${href === router.asPath ? 'text-black dark:text-white title-4' : 'text-[#6B6B6B] dark:text-grey_milk_weight-dark title-3'}`}>{text}</Link>
 
     </>)
 }

@@ -24,10 +24,6 @@ export default {
           light: "#6B6B6B",
           dark: "#F4F4F4",
         },
-        black_white: {
-          light: "#FFFFFF",
-          dark: "#000000",
-        },
         pink: {
           light: "#FF7795",
           dark: "#FF7795",
