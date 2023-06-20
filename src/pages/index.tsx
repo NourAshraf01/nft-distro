@@ -18,7 +18,7 @@ const Home: NextPage = () => {
   useLayoutEffect(()=>{
     const ctx = gsap.context((self) => {
       gsap.from('#main-nft',{
-        rotate: -100,
+        rotate: -45,
         scrollTrigger: {
           trigger: "#main-nft",
           start: 'top bottom',

@@ -37,16 +37,16 @@ const NFTBidCard = ({ user, userAvatar, nftName, nft, currentBid, description,po
     }, [])
     return (<>
         <div className="flex bg-white dark:bg-light_black_grey-dark rounded-[9px] p-[2.1rem] card-shadow-2 gap-[10px] flex-1 relative max-w-fit">
-            <div className="rounded-[15px] h-full img-wrap w-[400px]">
+            <div className="rounded-[15px] h-full">
                 {
                     nft === "0" ?
-                        <img  src={img0.src} alt="" /> :
-                        <img  src={img1.src} alt="" />
+                        <img  src={img0.src} height={'100%'} style={{height:'100%',maxWidth:'revert'}} alt="" /> :
+                        <img  src={img1.src} alt="" height={'100%'} style={{height:'100%',maxWidth:'revert'}} />
 
 
                 }
             </div>
-            <div className='flex flex-col gap-[2rem] p-[1.5rem]'>
+            <div className='flex flex-col gap-[2rem] p-[1.5rem] max-w-fit max-h-full min-w-min min-h-0'>
                 <div className='flex items-center gap-[5px]'>
                     <UserAvatar userAvatar={userAvatar} verified={true} />
                     <span className='headline text-black dark:text-white'>{user}</span>
@@ -71,7 +71,7 @@ const NFTBidCard = ({ user, userAvatar, nftName, nft, currentBid, description,po
                         <span className='caption-1'>{hours}h {minutes}m {seconds}s</span>
                     </div>
                 </div>
-                <div className='flex-1 w-full h-[5rem]'>
+                <div className='w-full h-[5rem]'>
                     <Button onClick={() => { }} className='headline'  text='Place Bid'/>
                 </div>
             </div>

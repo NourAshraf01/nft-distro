@@ -39,10 +39,10 @@ const Landing = () => {
         <section id="home" className="min-h-[90vh] flex flex-col p-[20px] z-20 relative">
             <div className="container flex flex-col gap-52">
                 <Header />
-                <div className="flex justify-between flex-wrap">
-                    <div className="flex flex-col w-[50%] gap-8">
+                <div className="flex justify-between flex-wrap items-center">
+                    <div className="flex flex-col max-w-[45%] gap-8 min-w-[45rem]">
                         <span className="web3-text dark:text-grey_milk_weight-dark">WEB 3 NON-FUNGIBLE TOKENS</span>
-                        <span className="clash-display dark:text-white leading-[85px]">
+                        <span className="text-ellipsis clash-display dark:text-white leading-[85px]">
                             Unlock Unique Digital Ownership with NFTs
                         </span>
                         <span className="text-[2.4rem] text-grey_milk_weight-light dark:text-grey_milk_weight-dark">Experience the Revolutionary World of Non-Fungible Tokens on Our Exclusive NFT Marketplace</span>
@@ -50,13 +50,13 @@ const Landing = () => {
                             <Button text="Connect Wallet" onClick={handleLogin} />
                         </div>
                     </div>
-                    <div className="flex flex-col" id="main-nft">
-                        <div className="relative w-full">
-                            <div className="absolute bottom-[0px] left-[-100px] ball-shadow z-9999">
+                    <div className="flex flex-col h-full min-w-[30rem]" id="main-nft">
+                        <div className="relative w-full h-full">
+                            <div className="absolute bottom-[0px] left-[-19.5%] ball-shadow z-9999 w-[38%]">
                                 <img width={'100%'} src={svg3dball.src} alt="" />
 
                             </div>
-                            <div className="absolute top-[-40px] right-[-60px] ball-shadow z-9999">
+                            <div className="absolute top-[-7.5%] right-[-11.7%] ball-shadow z-9999 w-[25%]">
                                 <img width={'100%'} src={svg3dballsamll.src} alt="" />
 
                             </div>
